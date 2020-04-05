@@ -12,4 +12,17 @@ body {
     align-items: center;
     justify-content: center;
     height: 100vh;
+    font-family: 'Lato', sans-serif;
+    margin: 0;
+}
+
+.movie-container {
+    margin: 20px 0;    
+}
+
+.movie-container select {
+    background-color: #fff;
+    border: 0;
+    border-radius: 5px;
+    font-size: 14px;
 }
