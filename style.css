@@ -41,6 +41,14 @@ body {
     border-top-right-radius: 10px;
 }
 
+.seat.selected {
+    background-color: #6feaf6;
+}
+
+.seat.occupied {
+    background-color: #fff;
+}
+
 .row {
     display: flex;
 }
