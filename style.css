@@ -1,8 +1,10 @@
 @import url('https://fonts.googleapis.com/css2?family=Lato:ital,wght@1,900&display=swap');
 
+
 * {
     box-sizing: border-box;
 }
+
 
 body {
     background-color: #242333;
@@ -16,9 +18,11 @@ body {
     margin: 0;
 }
 
+
 .movie-container {
     margin: 20px 0;    
 }
+
 
 .movie-container select {
     background-color: #fff;
@@ -32,6 +36,7 @@ body {
     appearance: none;
 }
 
+
 .seat {
     background-color: #444451;
     height: 12px;
@@ -41,31 +46,38 @@ body {
     border-top-right-radius: 10px;
 }
 
+
 .seat.selected {
     background-color: #6feaf6;
 }
+
 
 .seat.occupied {
     background-color: #fff;
 }
 
+
 .seat:nth-of-type(2) {
     margin-right: 18px;
 }
 
+
 .seat:nth-last-of-type(2) {
     margin-left: 18px;
 }
+
 
 .seat:not(.occupied):hover {
    cursor: pointer;
    transform: scale(1.2);
 }
 
+
 .showcase.seat:not(.occupied):hover {
     cursor: default;
     transform: scale(1);
  }
+
 
  .showcase {
      background: rgba(0, 0, 0, 0.1);
@@ -77,10 +89,27 @@ body {
      justify-content: space-between;
  }
 
+
 .showcase li {
-    
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 0 10px;
 }
+
+
+.showcase li small {
+  margin-left: 2px;
+}
+
 
 .row {
     display: flex;
+}
+
+
+.screen {
+    background-color: #777;
+    height: 70px;
+    width: 100%;
 }
