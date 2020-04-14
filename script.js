@@ -9,8 +9,16 @@ const ticketPrice = +movieSelect.value;
 // console.log(typeof ticketPrice); logging to console but typeof kicks back string so to make it a number add + to moviesSelect.value
 
 
+// Update total and count
+function updateSelectedCount() {
+   const selectedSeats = document.querySelectorAll('.row .seat.selected');
+}
+
+
 container.addEventListener('click', (e) => {
     if(e.target.classList.contains('seat') && !e.target.classList.contains('occupied')) {
        e.target.classList.toggle('selected');
+
+       updateSelectedCount();
     }
 });
