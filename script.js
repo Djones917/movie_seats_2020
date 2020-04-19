@@ -6,7 +6,7 @@ const movieSelect = document.getElementById('movie');
 
 
 
-const ticketPrice = +movieSelect.value;
+let ticketPrice = +movieSelect.value;
 // console.log(typeof ticketPrice); logging to console but typeof kicks back string so to make it a number add + to moviesSelect.value
 
 
@@ -24,7 +24,8 @@ function updateSelectedCount() {
 
 // Movie Select Event
 movieSelect.addEventListener('change', e => {
-   ticketPrice = e.target.value;
+   ticketPrice = +e.target.value;
+   updateSelectedCount();
 });
 
 
