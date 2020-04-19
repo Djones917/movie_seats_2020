@@ -5,16 +5,30 @@ const total = document.getElementById('total');
 const movieSelect = document.getElementById('movie');
 
 
+
 const ticketPrice = +movieSelect.value;
 // console.log(typeof ticketPrice); logging to console but typeof kicks back string so to make it a number add + to moviesSelect.value
 
 
-// Update total and count
+
+// Update total and count Remember querySelectorAll will give a nodelist
 function updateSelectedCount() {
    const selectedSeats = document.querySelectorAll('.row .seat.selected');
+   
+   const selectedSeatsCount = selectedSeats.length;
+   
+   count.innerText = selectedSeatsCount;
+   total.innerText = selectedSeatsCount * ticketPrice;
 }
 
 
+// Movie Select Event
+movieSelect.addEventListener('change', e => {
+   ticketPrice = e.target.value;
+});
+
+
+// Seat Click Event
 container.addEventListener('click', (e) => {
     if(e.target.classList.contains('seat') && !e.target.classList.contains('occupied')) {
        e.target.classList.toggle('selected');
