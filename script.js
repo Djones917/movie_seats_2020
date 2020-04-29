@@ -6,6 +6,10 @@ const movieSelect = document.getElementById('movie');
 
 
 
+populateUI();
+
+
+
 let ticketPrice = +movieSelect.value;
 // console.log(typeof ticketPrice); logging to console but typeof kicks back string so to make it a number add + to moviesSelect.value
 
