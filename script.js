@@ -39,6 +39,14 @@ function updateSelectedCount() {
 }
 
 
+
+// Get data from local storage and populate UI
+function populateUI() {
+
+}
+
+
+
 // Movie Select Event
 movieSelect.addEventListener('change', e => {
    ticketPrice = +e.target.value;
